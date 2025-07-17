@@ -16,20 +16,14 @@ The goal of this project is to classify tumors as **malignant** or **benign** ba
 - The data used is the [Breast Cancer Wisconsin (Diagnostic) Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data?resource=download).
 - 569 samples, 32 features, and a binary diagnosis label (`M` = malignant, `B` = benign).
 
----
 
-## Features
-
-Key features include:
-- **Radius, Texture, Perimeter, Area, Smoothness, Compactness, Concavity, Symmetry, Fractal Dimension** (mean, standard error, worst).
-- Target: **diagnosis** (malignant=1, benign=0).
 
 ---
 
 ## Project Structure
 
 - `Breast cancer detection.ipynb`: Main notebook with code, EDA, preprocessing, modeling, and evaluation.
-- `data.csv`: Input data file (not included here).
+- `data.csv`: Input data file.
 - `README.md`: Project documentation.
 
 ---
