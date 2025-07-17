@@ -37,6 +37,49 @@ This project requires Python 3.x and the following libraries:
 - seaborn
 - scikit-learn
 
-**Install dependencies:**
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
+---
+
+## How to Run
+
+1. Download or clone this repository.
+2. Place the `data.csv` file in the same directory as the notebook.
+3. Open the notebook `Breast cancer detection.ipynb` in [Jupyter Notebook](https://jupyter.org/) or [Google Colab](https://colab.research.google.com/).
+4. Run each cell sequentially to reproduce the analysis, starting from data exploration through modeling and results.
+
+---
+
+## Exploratory Data Analysis
+
+- **Distribution analysis:** Used barplots, histograms, and boxplots to understand the data.
+- **Correlation analysis:** Generated heatmaps to find features highly correlated with cancer diagnosis.
+- **Data cleaning:** Removed irrelevant columns, handled missing values, and checked for duplicates.
+
+---
+
+## Data Preprocessing
+
+- Encoded target labels (`M` → 1, `B` → 0).
+- Selected top correlated features using tree-based feature importance.
+- Normalized features using `StandardScaler`.
+- Split data into training and test sets (80/20).
+
+---
+
+## Modeling
+
+Trained and evaluated the following models:
+
+- **K-Nearest Neighbors (KNN):** Hyperparameter tuning for optimal k.
+- **Random Forest Classifier:** Used 1000 estimators for robust ensemble learning.
+- **Support Vector Machine (SVM):** Used default kernel and parameters.
+
+---
+
+## Results
+
+- **KNN Accuracy:** Up to ~94.7% (best with k=11).
+- **Random Forest Accuracy:** ~92.1%
+- **SVM Accuracy:** Evaluated in the notebook.
+
+Plots, confusion matrices, and accuracy metrics for each model are included in the notebook.
+
